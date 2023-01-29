@@ -6,5 +6,5 @@ function say(name) {
 helloMessage = { message: 'Hello,' };
 heyThereMessage = { message: 'Hey there,' };
 
-say(helloMessage, "John");
-say(heyThereMessage, "Michael");
+console.log(say.call(helloMessage, "John"));
+console.log(say.call(heyThereMessage, "Michael"));
